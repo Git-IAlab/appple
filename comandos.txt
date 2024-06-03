@@ -9,10 +9,11 @@ cd my-project
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
--> en index.css
+-> en index.css || dejar en blanco y paste
 	@tailwind base;
 	@tailwind components;
 	@tailwind utilities;
+-> remover app.css 
 -> nuevo tailwind.confi.js 
 	/** @type {import('tailwindcss').Config} */
 export default {
@@ -159,4 +160,5 @@ canvas {
     @apply opacity-0 translate-y-[100px]
   }
 }
+-> remove assets folder
 -> npm install gsap @gsap/react
