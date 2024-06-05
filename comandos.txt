@@ -163,4 +163,4 @@ canvas {
 -> remove assets folder
 -> npm install gsap @gsap/react
 -> ver en local || npm run dev -- --host
-->
+->npm install three @react-three/drei @react-three/fiber
