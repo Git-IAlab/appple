@@ -1,4 +1,4 @@
-import { OrbitControls, PerspectiveCamera, View } from "@react-three/drei";
+import { Html, OrbitControls, PerspectiveCamera, View } from "@react-three/drei";
 import Lights from "./Lights";
 import { Suspense } from "react";
 import IPhone from "./IPhone";
@@ -34,9 +34,9 @@ const ModelView = ({
       />
       <group ref={groupRef} name={`${index === 1} ? 'small' : 'large'`} position={[0, 0, 0]}>
         <Suspense fallback={
-          <html>
+          <Html>
             <div>Loading</div>
-          </html>
+          </Html>
         }>
           <IPhone 
             scale={index === 1 ? [15, 15, 15] : [17, 17, 17] }
